@@ -111,6 +111,7 @@ for i in range(grid_size[0]):
         ax[i, j].imshow(som[i * grid_size[1] + j].reshape(28, 28), cmap='gray')
         ax[i, j].set_title(f'{dominant_digit} ({percentage:.1f}%)', fontsize=12)
         ax[i, j].axis('off')
-
-plt.subplots_adjust(wspace=0.5, hspace=0.5)  # Add more space between subplots
-plt.show()  # Display the plot
+# Add more space between subplots
+plt.subplots_adjust(wspace=0.5, hspace=0.5)  
+ # Display the plot
+plt.show() 
